@@ -49,10 +49,13 @@ masking key(4 bytes)
 if above mask is set to 1
 see the beauty no reserved size only if set to 1 then these 4 bytes are occupied else not
 
-==========================================================
+---
+
 payload data & payload data continue
 real payloads data things comes in here
 if payload are huge those they go inside the continue stuffs
 and even if more than that then fragmentation things
+
+---
 
 conclusion : see these stuffs these are the stuffs that comes with every messages every messages see how smartly engineers has develop this those pregenerated meta data stuffs and all router and all dont have that huge computation power and all shit so these are beauty fragmentation stuffs and all happens in good time and all ! love this header design
