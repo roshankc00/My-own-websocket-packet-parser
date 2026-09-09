@@ -30,12 +30,12 @@ function parseFrames(buffer, onFrame) {
     let pos = off + 2;
 
     if (len === 126) {
-      // 126 means "real length is the next 2 bytes
+      // 126 means real length is the next 2 bytes
       if (buffer.length - pos < 2) break;
       len = buffer.readUInt16BE(pos);
       pos += 2;
     } else if (len === 127) {
-      // 127 means "real length is the next 8 bytes
+      // 127 means real length is the next 8 bytes
       if (buffer.length - pos < 8) break;
       const hi = buffer.readUInt32BE(pos);
       const lo = buffer.readUInt32BE(pos + 4);
