@@ -8,7 +8,7 @@ const { WS_GUID } = require("./constant");
 // Client independently does the exact same computation on its side with the key it sent.
 // matches server one and client one accepted else rejected
 
-// // validates the handshake headers a WS client must send per RFC 6455
+// validates the handshake headers a WS client must send per RFC 6455
 function checkHandshake(req) {
   const upgrade = (req.headers.upgrade || "").toLowerCase();
   const connection = (req.headers.connection || "").toLowerCase();
